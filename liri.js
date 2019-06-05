@@ -19,6 +19,7 @@ console.log("loading...")
 console.log("loading...")
 console.log("loading...")
 console.log("loading...")
+console.log("\n\n")
 //import node spotify api module
 var Spotify = require('node-spotify-api');
 //create spotify variable as outlined in documentation
@@ -68,8 +69,8 @@ function concertThis(artist) {
             console.log(results[0].lineup[0] + " is playing at the following events:");
 
             for (var i = 0; i < results.length; i++) {
-                if (results[i].venue.country == "USA") {
-                    console.log(results[i].venue.name + " in " + results[i].venue.city + ", " + results[i].venue.region + " " + results[i].venue.country + " on " + moment(results[i].datetime).format("MM/DD/YYYY"));
+                if (results[i].venue.country == "United States") {
+                    console.log(results[i].venue.name + " in " + results[i].venue.city + ", " + results[i].venue.region + " on " + moment(results[i].datetime).format("MM/DD/YYYY"));
                 }
                 else {
                     console.log(results[i].venue.name + " in " + results[i].venue.city + ", " + results[i].venue.country + " on " + moment(results[i].datetime).format("MM/DD/YYYY"));
