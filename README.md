@@ -10,3 +10,6 @@
 
 *Use `node liri.js movie-this <movie name here>` to find information on any film that you may be interested in.
 ![movie-this](images/movie-this.PNG "Movie Query")
+
+*Use `node liri.js do-what-it-says` to pull the text from the file labled random.txt run it as a command.
+![do-what-it-says](images/do-what-it-says.PNG "Random.txt Command")
